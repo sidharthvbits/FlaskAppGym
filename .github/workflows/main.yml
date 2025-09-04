@@ -1,0 +1,13 @@
+name: Print Message on Commit
+on:
+  push:
+    branches:
+      - main
+      - AddDonationBlogPage # Other branches as added
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Commit Message
+        run: echo "A new commit has been made to the repository!"
