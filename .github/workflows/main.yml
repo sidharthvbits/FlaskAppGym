@@ -7,7 +7,6 @@ on:
 jobs:
   print_message:
     runs-on: ubuntu-latest
-
     steps:
       - name: Print Commit Message
         run: echo "A new commit has been made to the repository!"
