@@ -1,4 +1,4 @@
-name: Hello World Manual Test
+name: Say Hello Manual Test
 
 on:
   workflow_dispatch:
