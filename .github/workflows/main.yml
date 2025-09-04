@@ -1,12 +1,16 @@
-name: Print Message on Commit
+name: Hello World Manual Test
+
 on:
-  push:
-    branches:
-      - main
-      - AddDonationBlogPage # Other branches as added
+  workflow_dispatch:
+
 jobs:
-  print_message:
+  say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Commit Message
-        run: echo "A new commit has been made to the repository!"
+      - name: Echo Hello
+        run: echo "Hello"
+      
+      - name: Echo with timestamp
+        run: |
+          echo "Hello at $(date)"
+          echo "Workflow triggered successfully!"
